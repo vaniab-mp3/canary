@@ -32,6 +32,7 @@ Existing awareness efforts primarily rely on general-purpose platforms that are 
 git clone https://github.com/vaniab-mp3/canario.git
 cd canario
 npm install
+```
 
 ## Privacy & Data Principles
 
