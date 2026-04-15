@@ -31,9 +31,9 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="report"
+        name="rightsGuide"
         options={{
-          title: 'Report',
+          title: 'Know Your Rights Guide',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="location-outline" size={size} color={color} />
           ),
