@@ -6,6 +6,7 @@ function PingButton({ onPress }) {
   return (
     <TouchableOpacity style={styles.pingButton} onPress={onPress}>
       <Ionicons name="warning" size={28} color="white" />
+      
     </TouchableOpacity>
   );
 }

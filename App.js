@@ -1,3 +1,7 @@
+///// Basically useless, just to make sure the app runs without errors. 
+//// The actual code is in the app folder, which is where expo-router looks for it.
+
+
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
