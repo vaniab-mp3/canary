@@ -33,9 +33,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="rightsGuide"
         options={{
-          title: 'Know Your Rights Guide',
+          title: 'Rights Guide',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="location-outline" size={size} color={color} />
+            <Ionicons name="shield-checkmark-outline" size={size} color={color} />
           ),
         }}
       />
@@ -45,7 +45,9 @@ export default function TabLayout() {
           title: 'Ping',
           tabBarIcon: () => null,
           tabBarButton: (props) => (
-            <PingButton onPress={props.onPress} />
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+              <PingButton onPress={props.onPress} />
+            </View>
           ),
         }}
       />
