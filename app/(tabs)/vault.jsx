@@ -25,25 +25,25 @@ import * as DocumentPicker from 'expo-document-picker';
 // ];
 
 // For bundled images, set `image` to a require(). For uploaded files, `uri` is set instead.
-const INITIAL_DOCUMENTS = [
-  {
-    id: '1',
-    name: 'Passport',
-    date: 'February 18, 2026',
-    image: require('../../assets/placeholder-passport.png'),
-    uri: null,
-  },
-  {
-    id: '2',
-    name: 'Mortgage Bill',
-    date: 'January 27, 2026',
-    image: null,
-    uri: null,
-  },
-];
+// const INITIAL_DOCUMENTS = [
+//   {
+//     id: '1',
+//     name: 'Passport',
+//     date: 'February 18, 2026',
+//     image: require('../../assets/placeholder-passport.png'),
+//     uri: null,
+//   },
+//   {
+//     id: '2',
+//     name: 'Mortgage Bill',
+//     date: 'January 27, 2026',
+//     image: null,
+//     uri: null,
+//   },
+// ];
 
 export default function Vault() {
-  const [documents, setDocuments] = useState(INITIAL_DOCUMENTS);
+  const [documents, setDocuments] = useState([]);
   const [preview, setPreview] = useState(null);       // { source, name }
   const [pending, setPending] = useState(null);        // picked asset waiting for a name
   const [docName, setDocName] = useState('');
