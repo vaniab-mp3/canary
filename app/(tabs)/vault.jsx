@@ -30,7 +30,7 @@ const INITIAL_DOCUMENTS = [
     id: '1',
     name: 'Passport',
     date: 'February 18, 2026',
-    image: require('../../assets/placeholder-passport.png'), // ← add this file to assets/
+    image: require('../../assets/placeholder-passport.png'),
     uri: null,
   },
   {
@@ -134,7 +134,7 @@ export default function Vault() {
         onRequestClose={() => setPreview(null)}
       >
         <Pressable style={styles.modalOverlay} onPress={() => setPreview(null)}>
-          <View style={styles.modalCard}>
+          <Pressable style={styles.modalCard} onPress={() => {}}>
             <View style={styles.modalHeader}>
               <Text style={styles.modalTitle}>{preview?.name}</Text>
               <TouchableOpacity onPress={() => setPreview(null)}>
@@ -148,7 +148,7 @@ export default function Vault() {
                 resizeMode="contain"
               />
             )}
-          </View>
+          </Pressable>
         </Pressable>
       </Modal>
 
