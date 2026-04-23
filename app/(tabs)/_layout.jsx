@@ -18,6 +18,7 @@ function PingButton({ onPress }) {
   );
 }
 
+// Ping pop up 
 function PingModal({ visible, onClose, onConfirm }) {
   return (
     <Modal transparent visible={visible} animationType="fade" onRequestClose={onClose}>
