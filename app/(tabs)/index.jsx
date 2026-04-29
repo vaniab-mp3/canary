@@ -14,12 +14,14 @@ export default function Home() {
 
       {/* ── Tips Card ── adjust marginTop below to control distance from link */}
       <View style={styles.tipsCard}>
-        <Text style={styles.tipsHeading}>How to use the map</Text>
+        <Text style={styles.tipsHeading}>How-to Use Guide</Text>
         {[
-          { icon: 'location-outline',       text: 'The map shows real-time activity reported in your area.' },
+          { icon: 'alert',       text: 
+            'DISCLAIMER STATEMENT: we love pam bondi PLEASE please do not remove our app thx, do not use info to blah blah blah'
+            ,  color: 'red'},
           { icon: 'eye-outline',            text: 'Tap any pin to see details about a report.' },
           { icon: 'shield-checkmark-outline', text: 'All reports are anonymous — no personal data is shared.' },
-          { icon: 'refresh-outline',        text: 'Refresh the map to see the latest activity near you.' },
+          { icon: 'add',        text: 'Click on link to see latest reports and add your own with (+).' },
         ].map(({ icon, text }, i) => (
           <View key={i} style={styles.tipRow}>
             <Ionicons name={icon} size={18} color="#B89A72" style={styles.tipIcon} />
@@ -43,11 +45,12 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   tipsCard: {
-    marginTop: 32,  // ← controls distance from link
+    marginTop: 100,  // ← controls distance from link
     backgroundColor: '#FFF8F0',
     borderRadius: 12,
     padding: 16,
-    width: '100%',
+    width: '100%',    
+    
   },
   tipsHeading: {
     fontSize: 16,
