@@ -14,7 +14,7 @@ export default function Home() {
 
       {/* ── Tips Card ── adjust marginTop below to control distance from link */}
       <View style={styles.tipsCard}>
-        <Text style={styles.tipsHeading}>How-to Use Guide</Text>
+        <Text style={styles.tipsHeading}>Quick Reference Guide</Text>
         {[
           { icon: 'alert',       text: 
             'DISCLAIMER STATEMENT: we love pam bondi PLEASE please do not remove our app thx, do not use info to blah blah blah'
